@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+@import '_var';
+@import '_btn';
+@import '_card';
+@import '_name';
+@import '_price';
+
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.h2 {
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: $green;
+}
+
+.h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: $blue;
+    margin-bottom: 42px;
+}
+
+.card__name {
+    padding: 20px 0 10px;
+}
+
+.block {
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    &__card {
+            margin: 0 auto;
+            max-width: 447px;
+            margin-bottom: 30px;
+
+        @media (min-width: 768px){
+        width: calc(50% - 30px);
+        }
+
+        @media (min-width: 992px) {
+            width: calc(100% / 3 - 10px);
+        }
+            
+        @media (min-width: 1200px) {
+            width: calc(100% / 3 - 30px);
+        }
+        }
+
+    &__price {
+
+        @media (min-width: 768px){
+            justify-content: space-between;
+        }
+    }
+
+    .price__new-price {
+
+        @media (max-width: 767px) {
+        margin:0 80px 0 10px ;
+        }
+    }
+}
+

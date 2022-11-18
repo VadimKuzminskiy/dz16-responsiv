@@ -1,0 +1,9 @@
+.card {
+    background: $grey;
+    //max-width: $width-card;
+    border-radius: $br-card;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+}
